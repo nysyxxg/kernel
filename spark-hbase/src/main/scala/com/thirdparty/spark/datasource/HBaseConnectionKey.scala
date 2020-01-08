@@ -10,7 +10,7 @@ import org.apache.hadoop.hbase.security.{User, UserProvider}
 import scala.collection.mutable
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class HBaseConnectionKey(c: Configuration) {
   val conf: Configuration = c
   val CONNECTION_PROPERTIES: Array[String] = Array[String](

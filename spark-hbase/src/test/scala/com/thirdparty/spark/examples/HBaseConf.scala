@@ -3,7 +3,7 @@ package com.thirdparty.spark.examples
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.hbase.HBaseConfiguration
 
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class HBaseConf {
   val conf: Configuration = HBaseConfiguration.create()
   conf.set("fs.defaultFS", "hdfs://xxxx:8020")

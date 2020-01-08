@@ -4,7 +4,7 @@ import org.apache.hadoop.hbase.TableName
 import org.apache.hadoop.hbase.client.{Admin, Connection, RegionLocator, Table}
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 case class SmartConnection(connection: Connection, var refCount: Int = 0, var timestamp: Long = 0) {
   def getTable(tableName: TableName): Table = connection.getTable(tableName)
 

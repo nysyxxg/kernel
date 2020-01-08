@@ -24,7 +24,7 @@ import scala.collection.mutable.ListBuffer
  *                  f2:col2
  * @param batch     批大小,每满足一个batch会生成一个RDD的分区
  */
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class HBaseGetRDD(@transient val sc: SparkContext,
                   @transient hbaseConf: Configuration,
                   @transient rowkeys: Array[Array[Byte]],
@@ -122,5 +122,5 @@ class HBaseGetRDD(@transient val sc: SparkContext,
   }
 }
 
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class GetPartition(override val index: Int, val rowkeys: Array[Byte]) extends Partition

@@ -6,7 +6,7 @@ import org.apache.hadoop.hbase.client.{Result, ResultScanner, Scan, Table}
 import org.apache.hadoop.hbase.mapreduce.TableInputFormat
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 case class TableResource(hbaseConf: Configuration) extends ReferencedResource {
   var connection: SmartConnection = _
   var table: Table = _

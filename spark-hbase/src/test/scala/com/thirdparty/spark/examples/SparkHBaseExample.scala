@@ -7,7 +7,7 @@ import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.hbase.{CellUtil, TableName}
 import org.apache.spark.sql.SparkSession
 
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 object SparkHBaseExample extends HBaseConf {
 
   val F1: Array[Byte] = Bytes.toBytes("f1")

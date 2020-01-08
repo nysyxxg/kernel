@@ -7,7 +7,7 @@ import org.apache.hadoop.hbase.TableName
 import org.apache.hadoop.hbase.client._
 import org.apache.hadoop.hbase.util.Bytes
 
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 object MockData extends HBaseConf {
   val F1: Array[Byte] = Bytes.toBytes("f1")
   val F2: Array[Byte] = Bytes.toBytes("f2")

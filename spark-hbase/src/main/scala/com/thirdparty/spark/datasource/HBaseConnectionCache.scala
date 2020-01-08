@@ -8,7 +8,7 @@ import org.apache.hadoop.hbase.client.{Connection, ConnectionFactory}
 import scala.collection.mutable
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 object HBaseConnectionCache {
 
   // A hashmap of Spark-HBase connections. Key is HBaseConnectionKey.

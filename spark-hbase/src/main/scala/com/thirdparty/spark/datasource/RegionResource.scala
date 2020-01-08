@@ -6,7 +6,7 @@ import org.apache.hadoop.hbase.client.RegionLocator
 import org.apache.hadoop.hbase.mapreduce.TableInputFormat
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 case class RegionResource(hbaseConf: Configuration) extends ReferencedResource {
   var connection: SmartConnection = _
   var rl: RegionLocator = _

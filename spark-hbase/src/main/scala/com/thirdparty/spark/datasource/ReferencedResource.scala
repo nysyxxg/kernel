@@ -1,7 +1,7 @@
 package com.thirdparty.spark.datasource
 
 // copy from https://github.com/apache/hbase-connectors
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 trait ReferencedResource {
   var count: Int = 0
 

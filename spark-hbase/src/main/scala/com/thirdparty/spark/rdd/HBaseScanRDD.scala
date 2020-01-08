@@ -19,7 +19,7 @@ import scala.collection.mutable.ListBuffer
  * @param baseScan      基础scan:每个scan共同需要设置的属性(除了startRow 和 stopRow)
  * @param startStopKeys 每个scan的startRow和stopRow 组成的数组
  */
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class HBaseScanRDD(@transient val sc: SparkContext,
                    @transient hbaseConf: Configuration,
                    @transient baseScan: Scan,
@@ -195,5 +195,5 @@ class HBaseScanRDD(@transient val sc: SparkContext,
   }
 }
 
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 class ScanPartition(override val index: Int, var scan: String, val server: Option[String] = None) extends Partition

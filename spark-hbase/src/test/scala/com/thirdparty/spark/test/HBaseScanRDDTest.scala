@@ -10,7 +10,7 @@ import org.apache.hadoop.hbase.{CellUtil, HBaseConfiguration, HBaseTestingUtilit
 import org.apache.spark.sql.SparkSession
 
 // 使用linux 环境才能运行,windows环境运行失败
-// @author https://github.com/bugboy1024
+// @author https://github.com/thirdparty-core
 object HBaseScanRDDTest {
   val F1: Array[Byte] = Bytes.toBytes("f1")
   val F2: Array[Byte] = Bytes.toBytes("f2")
