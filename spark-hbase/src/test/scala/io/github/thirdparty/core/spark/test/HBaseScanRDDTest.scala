@@ -1,9 +1,9 @@
-package com.thirdparty.spark.test
+package io.github.thirdparty.core.spark.test
 
 import java.util.Collections
 
 import com.google.common.collect.Lists
-import com.thirdparty.spark.rdd.HBaseScanRDD
+import io.github.thirdparty.core.spark.rdd.HBaseScanRDD
 import org.apache.hadoop.hbase.client.{ColumnFamilyDescriptorBuilder, Put, Scan, TableDescriptorBuilder}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.hbase.{CellUtil, HBaseConfiguration, HBaseTestingUtility, TableName}

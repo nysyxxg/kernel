@@ -1,4 +1,4 @@
-package com.thirdparty.spark.datasource
+package io.github.thirdparty.core.spark.datasource
 
 import org.apache.hadoop.hbase.TableName
 import org.apache.hadoop.hbase.client.{Admin, Connection, RegionLocator, Table}

@@ -1,6 +1,6 @@
-package com.thirdparty.spark.examples
+package io.github.thirdparty.core.spark.examples
 
-import com.thirdparty.spark.rdd.{HBaseGetRDD, HBaseScanRDD}
+import io.github.thirdparty.core.spark.rdd.{HBaseGetRDD, HBaseScanRDD}
 import org.apache.hadoop.hbase.client.Scan
 import org.apache.hadoop.hbase.mapreduce.TableInputFormat
 import org.apache.hadoop.hbase.util.Bytes

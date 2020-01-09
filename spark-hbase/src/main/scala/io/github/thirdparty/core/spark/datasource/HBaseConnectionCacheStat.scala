@@ -1,4 +1,4 @@
-package com.thirdparty.spark.datasource
+package io.github.thirdparty.core.spark.datasource
 
 // copy from https://github.com/apache/hbase-connectors
 // @author https://github.com/thirdparty-core

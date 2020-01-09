@@ -1,6 +1,6 @@
-package com.thirdparty.spark.rdd
+package io.github.thirdparty.core.spark.rdd
 
-import com.thirdparty.spark.datasource.{HBaseConnectionCache, HBaseRegion, RegionResource, TableResource}
+import io.github.thirdparty.core.spark.datasource.{HBaseConnectionCache, HBaseRegion, RegionResource, TableResource}
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.hbase.client._
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil

@@ -1,4 +1,4 @@
-package com.thirdparty.spark.datasource
+package io.github.thirdparty.core.spark.datasource
 
 // @author https://github.com/thirdparty-core
 case class HBaseRegion(start: Option[Array[Byte]] = None,

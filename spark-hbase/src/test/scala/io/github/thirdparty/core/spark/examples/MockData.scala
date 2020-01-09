@@ -1,4 +1,4 @@
-package com.thirdparty.spark.examples
+package io.github.thirdparty.core.spark.examples
 
 import java.util.{Collections, UUID}
 
