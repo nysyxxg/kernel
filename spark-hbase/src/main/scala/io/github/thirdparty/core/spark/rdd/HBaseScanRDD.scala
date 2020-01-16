@@ -175,6 +175,7 @@ class HBaseScanRDD(@transient val sc: SparkContext,
    * @return
    */
   def merge(source: Array[(Array[Byte], Array[Byte])]): Array[(Array[Byte], Array[Byte])] = {
+    if (source.length < 2) return source
     val target = new ListBuffer[(Array[Byte], Array[Byte])]()
     var start = source(0)._1
     var stop = source(0)._2
