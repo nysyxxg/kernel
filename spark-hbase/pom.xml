@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spark-hbase</artifactId>
+    <version>1.0.0</version>
+
     <properties>
         <spark.version>2.4.4</spark.version>
         <hadoop.version>2.8.5</hadoop.version>
@@ -17,8 +19,8 @@
         <scala.version>2.11.12</scala.version>
         <scala.lib.version>2.11</scala.lib.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--<scope>provided</scope>-->
-        <scope>compile</scope>
+        <scope>provided</scope>
+        <!--<scope>compile</scope>-->
     </properties>
 
     <dependencyManagement>
@@ -30,7 +32,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <distributionManagement>
+    <!--<distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
@@ -42,17 +44,17 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
 
-       <!-- <repository>
+        <repository>
             <id>repository</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>-->
-    </distributionManagement>
+        </snapshotRepository>
+    </distributionManagement>-->
 
-    <licenses>
+    <!--<licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
@@ -72,9 +74,8 @@
             <email>lijiayan_mail@163.com</email>
             <url>https://github.com/thirdparty-core</url>
         </developer>
-    </developers>
+    </developers>-->
     <dependencies>
-
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
@@ -322,7 +323,7 @@
             </plugin>-->
 
             <!--GPG-->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
@@ -335,7 +336,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <!--Compiler-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -348,7 +349,7 @@
                 </configuration>
             </plugin>
             <!--Release-->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
@@ -358,7 +359,7 @@
                     <releaseProfiles>release</releaseProfiles>
                     <goals>deploy</goals>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
