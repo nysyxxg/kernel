@@ -7,7 +7,7 @@
     <groupId>io.github.thirdparty-core</groupId>
     <artifactId>kernel</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-pre</version>
     <name>kernel</name>
     <description>Some core third-party implementations</description>
     <url>https://github.com/thirdparty-core/kernel</url>
@@ -15,6 +15,7 @@
         <module>spark-hbase</module>
     </modules>
 
+    <!--pom example https://central.sonatype.org/pages/requirements.html#a-complete-example-pom-->
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
@@ -26,15 +27,6 @@
             <name>Nexus Release Repository</name>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
-
-        <!-- <repository>
-             <id>repository</id>
-             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-         </repository>
-         <snapshotRepository>
-             <id>ossrh</id>
-             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-         </snapshotRepository>-->
     </distributionManagement>
 
     <licenses>
@@ -46,9 +38,8 @@
     </licenses>
     <scm>
         <url>https://github.com/thirdparty-core/kernel.git</url>
-        <connection>scm:git:https://github.com/thirdparty-core/kernel.git</connection>
-        <tag>master</tag>
-        <developerConnection>https://github.com/thirdparty-core</developerConnection>
+        <connection>scm:git:git://github.com/thirdparty-core/kernel.git</connection>
+        <developerConnection>scm:git:ssh://github.com/thirdparty-core</developerConnection>
     </scm>
 
     <developers>
